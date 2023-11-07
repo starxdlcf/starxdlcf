@@ -1,0 +1,22 @@
+#Triang. pasc 2.0
+
+base = []
+lista = []
+lista_anterior = [1, 1]
+elementos = 0
+
+num = eval(input("Até qual linha? "))
+
+for i in range(3,num):
+    k = i - 1
+    while elementos < k:
+        lista.append(1)
+        n = len(lista)
+        y = n+1
+        print(y)
+        x = lista_anterior[n] + lista_anterior[y]
+        lista.append(x)
+        elementos += 1
+lista.append(1)
+print(lista)
+lista.clear()
